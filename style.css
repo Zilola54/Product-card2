@@ -16,7 +16,7 @@
 }
 
 .product-selection_title {
-   max-width: 850px;
+  max-width: 850px;
   width: 100%;
   margin: 220px auto 100px;
   text-align: center;
@@ -33,6 +33,15 @@
   background-size: 650px auto;
   position: absolute;
   z-index: -1;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  top: 120px;
+  right: -20%;
+  width: 1650px;
+  border-radius: 0
 }
 
 .product-card-wrapper {
