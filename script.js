@@ -5,7 +5,7 @@ const recolorFirstCardButton = document.getElementById('recolor-first-card-butto
 const blueHashColor = '#2b49f5';
 
 recolorFirstCardButton.addEventListener('click', () => {
-  firstCatalogCard.style.backgroundColor = blueHashColor
+  firstCatalogCard.style.backgroundColor = blueHashColor;
 });
 
 ///смена цвета фона всех карточек
@@ -17,8 +17,8 @@ const greenHashColor = "#11e74a"
 recolorAllCardButton.addEventListener('click', () => {
   catalogCards.forEach(
     card => card.style.backgroundColor = greenHashColor
-  )
-})
+  );
+});
 
 ///команда на открытие сайта Google
 const openGoogleButton = document.getElementById('open-google-button');
@@ -27,7 +27,7 @@ openGoogleButton.addEventListener('click', openGoogle);
 function openGoogle() {
   const ansver = confirm('Вы действительно хотите перейти на сайт Google?');
 
-  if (ansver === true) {
+  if (ansver) {
     window.open('http://google.com');
   } else {
     console.log('Пользователь отменил переход на Google');
@@ -44,17 +44,6 @@ title.addEventListener('mouseover', () => {
 const recolorLastCard = document.getElementById('recolor-last-card-button');
 const recolorLastCatalogCard = document.querySelector('.product-card:last-child');
 
-const purpleHashColor = '#600361'
-const whiteHashColor = '#f8fbf8'
-
-let isPurple = false;
-
 recolorLastCard.addEventListener('click', () => {
-  if (isPurple === false) {
-    recolorLastCatalogCard.style.backgroundColor = purpleHashColor;
-    isPurple = true;
-  } else {
-    recolorLastCatalogCard.style.backgroundColor = whiteHashColor;
-    isPurple = false;
-  }
-})
+  recolorLastCatalogCard.classList.toggle('is-purple');
+});
