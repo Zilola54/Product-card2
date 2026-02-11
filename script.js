@@ -34,7 +34,7 @@ function openGoogle() {
   }
 }
 
-///в консоли появляется название заголовка, который указала по тегу в скобках, переменная у нас title
+///в консоли появляется название заголовка, который указала по тегу в скобках, переменная title
 const title = document.querySelector('.product-selection_title');
 title.addEventListener('mouseover', () => {
   console.log(title.textContent);
