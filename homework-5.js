@@ -3,19 +3,21 @@
 function weather(city, temperature) {
   console.log(`Сейчас в ${city} температура  — ${temperature} градусов по Цельсию`)
 }
-weather('Екатеринбурге', -25)
+weather('Екатеринбурге', -25);
 
 //Функция, опеределяющая скорость света
-let LIGHT_SPEED = 299792458;
+function checkSpeed(speed) {
+  const LIGHT_SPEED = 299792458;
 
-if (LIGHT_SPEED > 299792458) {
-  console.log("superLuminal");
-} else if (LIGHT_SPEED === 299792458) {
-  console.log("lightSpeed");
-} else (LIGHT_SPEED < 299792458); {
-  console.log("subLuminal");
+  if (speed > LIGHT_SPEED) {
+    console.log("superLuminal");
+  } else if (speed === 299792458) {
+    console.log("LIGHT_SPEED");
+  } else {
+    console.log("subLuminal");
+  }
 }
-console.log(LIGHT_SPEED)
+checkSpeed(298792458);
 
 //Функция, помогающая подсчитать нужное кол-во денег для покупки яблок
 function buyProduct(product, price, budget) {
@@ -27,20 +29,20 @@ function buyProduct(product, price, budget) {
     console.log(`Вам не хватает ${difference}$, пополните баланс`);
   }
 }
-buyProduct ("Груша", 8, 5)
+buyProduct ("Груша", 8, 5);
 
 //Доп. задания
 function buyProperty (property , myBudget) {
 
-  if (myBudget <= property) {
+  if (myBudget < property) {
     let difference = property - myBudget;
-    console.log(`не хватает ${difference}`)
-  } else if (myBudget >= property) {
+    console.log(`Не хватает ${difference}`);
+  } else {
     let change = myBudget - property;
     console.log(`при покупке дома останется ${change}`);
   }
 }
-buyProperty(1000, 5000)
+buyProperty(1000, 9000);
 
 let city = "Moscow";
 const myAge = 30;
