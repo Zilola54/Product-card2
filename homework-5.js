@@ -29,12 +29,12 @@ function buyProduct(product, price, budget) {
 }
 buyProduct ("Груша", 8, 5)
 
-//Доп.задания
+//Доп. задания
 function buyProperty (property , myBudget) {
 
   if (myBudget <= property) {
-    let diff = property - myBudget;
-    console.log(`не хватает ${diff}`)
+    let difference = property - myBudget;
+    console.log(`не хватает ${difference}`)
   } else if (myBudget >= property) {
     let change = myBudget - property;
     console.log(`при покупке дома останется ${change}`);
