@@ -1,5 +1,6 @@
 
 //задание 3
+
 const user = {
   name: "Зилола",
   surname: "Олимова",
@@ -7,13 +8,11 @@ const user = {
   city: "Екатеринбург",
   country: "Россия",
   maritalStatus: "замужем",
-  email: "olimova03_95@mail.ru",
+  email: "olimova03_95@mail.ru"
 }
 
-console.log(user.name);
-console.log(user);
-
 //задание 4
+
 const auto = {
   make: "Honda",
   model: "insight",
@@ -22,32 +21,36 @@ const auto = {
   transmission: "automatic"
 }
 
-const updatedAuto = {...auto, owner: "user" };
-console.log(updatedAuto);
+auto.owner = user;
 
 //задание 5
+
 function addMaxSpeed(obj) {
-  if (obj.maxSpeed){
+  if (obj.maxSpeed) {
     return;
   }
+
   obj.maxSpeed = 400;
 }
-addMaxSpeed(auto)
-console.log(auto)
+
+addMaxSpeed(auto);
+console.log(auto);
 
 //задание 6
-function getPropertyValue(user, age) {
-  console.log(user[age])
+
+function getPropertyValueUser(user, key) {
+  console.log(user[key]);
 }
-getPropertyValue(user, "age");
+
+getPropertyValueUser(user, "age");
+
 
 //Задание 7
-const products = ['Сыр', 'Хлеб', 'Сметан', 'Молоко', 'Яблоко'];
 
-console.log(products)
-console.log(products[0])
+const products = ['Сыр', 'Хлеб', 'Сметана', 'Молоко', 'Яблоко'];
 
 //Задание 8
+
 const horrorMovies = [
   {
     title: "Обитель зла",
@@ -67,7 +70,8 @@ const horrorMovies = [
     year: 2007,
     genre: "Постапокалипсис"
   }
-]
+];
+
 console.log(horrorMovies[1].year);
 
 horrorMovies.push({
@@ -79,6 +83,7 @@ horrorMovies.push({
 console.log(horrorMovies.length);
 
 // задание 9
+
 const universeIronMan = [
   {
     title: "Железный человек",
@@ -88,22 +93,27 @@ const universeIronMan = [
   {
     title: "Железный человек 2",
     year: 2010,
-    director: "Джон Фаво"
+    director: "Джон Фавро"
   },
   {
     title: "Железный человек 3",
     year: 2013,
     director: "Шейн Блэк"
   }
-]
+];
+
 const myCollection = [...horrorMovies, ...universeIronMan];
 
 //задание 10
-function identifyMovies(movie) {
-  if (movie.year < 2010) {
-    return "Классика";
-  } else {
-    return "Современность";
-  }
+
+function getUpdatedMovies(movies) {
+  return movies.map((movie) => {
+    return {
+      ...movie,
+      isRare: movie.year > 2000,
+    };
+  });
 }
-console.log(identifyMovies(horrorMovies[1]));
+
+const updatedMovies = getUpdatedMovies(myCollection);
+console.log(updatedMovies)
