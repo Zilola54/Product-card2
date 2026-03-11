@@ -15,6 +15,7 @@ const plants = ["Хлорофитум", "Сансевиерия", "Алоэ ве
 console.log(plants.includes("Алоэ вера"));
 
 //задание 4
+
 function getReversed(array) {
   return array.reverse();
 };
