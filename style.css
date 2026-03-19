@@ -8,11 +8,9 @@
 }
 
 .all-elements {
-  width: 1110px;
+  max-width: 1110px;
   width:100%;
   margin: 0% auto;
-  position: relative;
-  margin: 0 auto;
 }
 
 .product-selection_title {
@@ -27,24 +25,25 @@
 }
 
 .background-picture {
+  position: relative;
   background: url("image/bg-flowers.png");
   background-repeat: no-repeat; 
   background-position: left 85px top -100px;
   background-size: 650px auto;
-  position: absolute;
-  z-index: -1;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .buttons {
   display: flex;
-  position: absolute;
   top: 120px;
   right: -20%;
-  width: 1650px;
+  margin-bottom: 50px;
+  width: 100%;
   border-radius: 0
 }
 
-.product-card-wrapper {
+.products-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,19 +54,20 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  flex: 0 1 340px;
+  flex: 1 1 300px;
+  max-width: 340px;
   min-height: 573px;
   background-color: #f7f7fa;
   border: 1px solid #f7f7fa;
   padding: 25px;
 }
 
-.product-card_img {
+.product-image {
   width: 290px;
   margin: 0 auto;
 }
 
-.product-card_for-skin {
+.product-type-skin {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -79,41 +79,34 @@
   display: block;
   margin-bottom: 5px;
   font-weight: 400;
-  margin-left: 0px;
 }
 
-.product-card_title {
+.product-title {
   font-size: 20px;
   line-height:1.3;
   color: #515076;
 }
 
-.product-card_descr { 
+.product-descr { 
   margin-bottom: 15px;
   line-height: 20px;
 }
 
-.product-card_composition {
+.product-compount {
   list-style-type: circle;
-  padding-left: 20px;
   padding-left: 17px;
   margin-bottom: 25px;
   margin-top: 5px;
 }
 
-.product-card_item {
-  padding-inline-start: 0px;
-  margin-bottom: 5px;
-}
-
-.product-card_price-wrapper {
+.product-price {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
 }
 
-.product-card_price-text {
+.product-label {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
