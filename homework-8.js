@@ -5,34 +5,12 @@ import { productCards } from "./product-cards.js";
 const productTemplate = document.getElementById('product-template');
 const productsList = document.querySelector('.products-list');
 
-productCards.forEach(card => {
-  const cardClone = productTemplate.content.cloneNode(true);
-
-  const listContainer = cardClone.querySelector('.product-compount');
-  listContainer.textContent = ''; 
-
-  card.compount.components.forEach(text => {
-    const li = document.createElement('li');
-    li.textContent = text;
-    listContainer.append(li);
-  });
-
-  cardClone.querySelector('.product-image').src =`./image/${card.img}`;
-  cardClone.querySelector('.product-type-skin').textContent = card.typeSkin;
-  cardClone.querySelector('.product-title').textContent = card.title;
-  cardClone.querySelector('.product-descr').textContent = card.descr;
-  cardClone.querySelector('.price-value').textContent = card.price.value;
-
-  productsList.appendChild(cardClone);
-
-});
-
 console.log(productsList);
 
 //Задание 4 Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
 const listOfCards = productCards.reduce((acc, card) => {
-  acc.push({[card.title]: card.descr});
+  acc.push({[card.title]: card.description});
 
   return acc;
 
@@ -41,7 +19,7 @@ const listOfCards = productCards.reduce((acc, card) => {
 console.log(listOfCards);
 
 const sumOfCard = productCards.reduce((acc, card) => {
-  return card.typeSkin === "для нормальной кожи"? acc + 1 : acc;
+  return card.skinType === "для нормальной кожи"? acc + 1 : acc;
 }, 0); 
 
 console.log(sumOfCard);
@@ -67,10 +45,10 @@ function renderCards(cardsArray) {
     const cardClone = productTemplate.content.cloneNode(true);
 
     cardClone.querySelector('.product-title').textContent = card.title;
-    cardClone.querySelector('.product-image').src = `./image/${card.img}`;
-    cardClone.querySelector('.product-type-skin').textContent = card.typeSkin;
-    cardClone.querySelector('.product-descr').textContent = card.descr;
-    cardClone.querySelector('.price-value').textContent = card.price.value;
+    cardClone.querySelector('.product-image').src = `./image/${card.image}.png`;
+    cardClone.querySelector('.product-skin-type').textContent = card.skinType;
+    cardClone.querySelector('.product-description').textContent = card.description;
+    cardClone.querySelector('.price').textContent = `${card.price} ₽`;
     
     const listContainer = cardClone.querySelector('.product-compount');
     listContainer.textContent = ''; 

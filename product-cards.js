@@ -1,93 +1,73 @@
 export const productCards = [
   {
-    typeSkin:"для нормальной кожи",
-    img:"moisturizing-mousse.png",
-    title:"Увлажняющий мусс",
-    descr:"Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
-    compount:{
-      name: 'Состав',
+    skinType: "для нормальной кожи",
+    image: "moisturizing-mousse",
+    title: "Увлажняющий мусс",
+    description: "Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
+    compount: {
       components:[
         'активные натуральные комплексы',
         'витамины C, A, PP, B И E',
         'солнцезащитные компоненты',
       ],
     },
-    price: {
-      name: 'Цена',
-      value: '2 750 ₽'
-    }
+    price: '2 750'
   },
   {
-    typeSkin:"для нормальной кожи",
-    img:"moisturizing-mask.png",
-    title:"Увлажняющий маска",
-    descr:"Способствует удерживанию влаги в верхних слоях кожи.",
+    skinType: "для нормальной кожи",
+    image: "moisturizing-mask",
+    title: "Увлажняющий маска",
+    description: "Способствует удерживанию влаги в верхних слоях кожи.",
     compount: {
-      name: 'Состав',
-      components:[
+      components: [
         'воски',
         'минералы',
         'масла'
       ],
     },
-    price: {
-      name: 'Цена',
-      value: '3 500 ₽'
-    }
+    price: '3 500'
   },
   {
-    typeSkin:"для нормальной кожи",
-    img:"cleansing-gel.png",
-    title:"Гель для умывания",
-    descr:"Интенсивно очищает, не повреждает защитный барьер кожи.",
+    skinType: "для нормальной кожи",
+    image: "cleansing-gel",
+    title: "Гель для умывания",
+    description: "Интенсивно очищает, не повреждает защитный барьер кожи.",
     compount: {
-      name: 'Состав',
-      components:[
+      components: [
         'минералы',
         'витамины C, A, PP, B И E',
         'солнцезащитные компоненты'
       ],
     },
-    price: {
-      name: 'Цена',
-      value: '2 750 ₽'
-    }
+    price: '2 750'
   },
   {
-    typeSkin:"для нормальной кожи",
-    img:"gift-set-No-1.png",
-    title:"Подарочный набор №1",
-    descr:"Интенсивно очищает, не повреждает защитный барьер кожи.",
+    skinType: "для нормальной кожи",
+    image: "gift-set-No-1",
+    title: "Подарочный набор №1",
+    description: "Интенсивно очищает, не повреждает защитный барьер кожи.",
     compount: {
-      name: 'Состав',
-      components:[
+      components: [
         'воски',
         'минералы',
         'масла'
       ],
     },
-    price: {
-      name: 'Цена',
-      value: '4 750 ₽'
-    }
+    price: '4 750'
   },
   {
-    typeSkin:"для нормальной кожи",
-    img:"gift-set-No-5.png",
-    title:"Подарочный набор №5",
-    descr:"Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
+    skinType: "для нормальной кожи",
+    image: "gift-set-No-5",
+    title: "Подарочный набор №5",
+    description: "Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
     compount: {
-      name: 'Состав',
-      components:[
+      components: [
         'воски',
         'минералы',
         'масла'
       ],
     },
-    price: {
-      name: 'Цена',
-      value: '7 520 ₽'
-    }
+    price: '7 520'
   }
 ];
 
