@@ -48,10 +48,10 @@ function renderCards(cardsArray) {
     cardClone.querySelector('.product-description').textContent = card.description;
     cardClone.querySelector('.price').textContent = `${card.price} ₽`;
     
-    const listContainer = cardClone.querySelector('.product-compount');
+    const listContainer = cardClone.querySelector('.product-compound');
     listContainer.textContent = ''; 
     
-    card.compount.forEach(text => {
+    card.compound.forEach(text => {
       const li = document.createElement('li');
       li.textContent = text;
       listContainer.append(li);

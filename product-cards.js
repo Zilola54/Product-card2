@@ -4,60 +4,60 @@ export const productCards = [
     image: "moisturizing-mousse",
     title: "Увлажняющий мусс",
     description: "Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
-    compount: [
+    compound: [
         'активные натуральные комплексы',
         'витамины C, A, PP, B И E',
         'солнцезащитные компоненты',
       ],
-    price: '2 750'
+    price: 2750
   },
   {
     skinType: "для нормальной кожи",
     image: "moisturizing-mask",
     title: "Увлажняющий маска",
     description: "Способствует удерживанию влаги в верхних слоях кожи.",
-    compount: [
+    compound: [
         'воски',
         'минералы',
         'масла'
       ],
-    price: '3 500'
+    price: 3500
   },
   {
     skinType: "для нормальной кожи",
     image: "cleansing-gel",
     title: "Гель для умывания",
     description: "Интенсивно очищает, не повреждает защитный барьер кожи.",
-    compount: [
+    compound: [
         'минералы',
         'витамины C, A, PP, B И E',
         'солнцезащитные компоненты'
       ],
-    price: '2 750'
+    price: 2750
   },
   {
     skinType: "для нормальной кожи",
     image: "gift-set-No-1",
     title: "Подарочный набор №1",
     description: "Интенсивно очищает, не повреждает защитный барьер кожи.",
-    compount: [
+    compound: [
         'воски',
         'минералы',
         'масла'
       ],
-    price: '4 750'
+    price: 4750
   },
   {
     skinType: "для нормальной кожи",
     image: "gift-set-No-5",
     title: "Подарочный набор №5",
     description: "Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
-    compount: [
+    compound: [
         'воски',
         'минералы',
         'масла'
       ],
-    price: '7 520'
+    price: 7520
   }
 ];
 
