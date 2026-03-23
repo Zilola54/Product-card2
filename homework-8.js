@@ -11,9 +11,7 @@ console.log(productsList);
 
 const listOfCards = productCards.reduce((acc, card) => {
   acc.push({[card.title]: card.description});
-
   return acc;
-
 }, []);
 
 console.log(listOfCards);
@@ -32,7 +30,7 @@ function getCardsCount() {
 
   if (isNaN(count) || count < 1 || count > 5) {
     alert("Ошибка! Пожалуйста, введите число от 1 до 5.");
-    return 0;
+    return getCardsCount();
   }
   return count;
 }
@@ -53,7 +51,7 @@ function renderCards(cardsArray) {
     const listContainer = cardClone.querySelector('.product-compount');
     listContainer.textContent = ''; 
     
-    card.compount.components.forEach(text => {
+    card.compount.forEach(text => {
       const li = document.createElement('li');
       li.textContent = text;
       listContainer.append(li);
