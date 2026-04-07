@@ -93,10 +93,6 @@ regForm.addEventListener('submit', (event) => {
 
 values.createdOn = new Date();
 
-console.log('ПРОВЕРКА: Дата создана?', values.createdOn); 
-console.log('ИТОГОВЫЙ ОБЪЕКТ:',values);
-
-  console.log('Данные проверены и готовы:', values);
   alert('Регистрация прошла успешно!');
   closeModal();
 
