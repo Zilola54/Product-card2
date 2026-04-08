@@ -32,14 +32,14 @@ function renderCards(cardsArray) {
 }
 
 function getCardsCount() {
-    return 5;
-}
+  const total = 5;
+  if (total > 0) {
+    renderCards(productCards.slice(0, total));
+  }
+ return total;
+};
 
-const count = getCardsCount();
-if (count > 0) {
-  renderCards(productCards.slice(0, count));
-
-}
+const count = getCardsCount(); 
 
 //задание 4
 const subscribeForm = document.querySelector('#subscribe-form')
@@ -70,13 +70,14 @@ cross.onclick = closeModal;
 btnCancel.onclick = closeModal;
 
 overlay.onclick = (e) => {
-  if(e.target === overlay) closeModal();
+  if (e.target === overlay) closeModal();
 };
 
 //Добавлена дата создания 
 
 let user;
 const regForm = document.querySelector('#reg-form');
+
 regForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -88,18 +89,18 @@ regForm.addEventListener('submit', (event) => {
     return;
   }
 
-  values.password = '*'.repeat(values.password.length);
-  delete values.confirmPassword;
+  const { confirmPassword, ...userData } = values;
 
-values.createdOn = new Date();
+  userData.password = '*'.repeat(userData.password.length);
+  userData.createdOn = new Date();
 
   alert('Регистрация прошла успешно!');
   closeModal();
 
-  user = values;
-
-console.log(user);
+  user = userData;
+  console.log(user);
 });
+
 
 
 
