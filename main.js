@@ -1,15 +1,8 @@
-import "./product-cards.js";
-import "./homework-10.js";
+import { Mage } from "./Mage.js";
 import "./homework-9.js";
-import "./homework-8.js";
-import "./homework-7.js";
-import "./homework-6.js";
-import "./homework-5.js";
-import "./script.js";
-import "./comments.js";
 import Modal from "./Modal.js";
 import Form from './Form.js'
-
+//Модальное окно и форма через классы
 const registrationModal = new Modal('modalOverlay');
 const registrationForm = new Form('reg-form');
 
@@ -49,3 +42,7 @@ registrationForm.formElement.addEventListener('submit', (event) => {
   console.log(user);
   alert('Успешная регистрация!');
 });
+//Реализована наследуемость классов
+const gandalf = new Mage("Гэндальф", 3, 10);
+gandalf.takeDamage()
+gandalf.checkDeath()
