@@ -10,4 +10,4 @@ export class Hero {
     if (this.heart <= 0)
     console.log(`Герой "${this.name}" пал в бою!`)
   }
-}
+};
