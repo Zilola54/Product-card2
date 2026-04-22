@@ -1,3 +1,6 @@
+import "./homework-11.js";
+import "./Cafe.js"
+
 import { Mage } from "./Mage.js";
 import "./homework-9.js";
 import Modal from "./Modal.js";
