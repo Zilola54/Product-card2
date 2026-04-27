@@ -1,0 +1,14 @@
+import { Drink } from './Drink.js'
+export class Lemonade extends Drink {
+  constructor(name, size, price, temperature, flavor,) {
+  super(name, size, price, temperature);
+  this.flavor = flavor;
+  }
+  addIce() {
+  console.log("Добавлен лёд")
+  }
+  prepare() {
+  this.addIce();
+  this.serveDrink(); 
+  }
+}
