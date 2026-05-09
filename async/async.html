@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title class="title">Список пользователей</title>
+  <link rel="stylesheet" href="async.css">
+</head>
+
+<body style="font-family: Montserrat;">
+  <div class="loading">Данные загружаются.....</div>
+  <h1 class="title">Список пользователей</h1>
+    <div class="buttons">
+        <button id="delete-last-card">Удалить последнюю карточку</button>
+        <button id="delete-everyone-card">Удалить все карточки</button>
+        <button id="get-card">Получить все карточки</button>
+    </div>
+
+    <div class="all-elements hidden">
+      <div class="background-picture">
+        <div class="users-list"></div>
+
+        <template id="users-template">
+          <div class="user-card">
+            <p class="user-id"></p>
+            <h3 class="user-name"></h3>
+            <p class="user-surname"></p>
+            <span class="user-email"></span>
+            <p class="user-age"></p>
+            <button class="delete-selected-card">Удалить этого пользователя</button>
+          </div>
+        </template>
+
+      </div>
+    </div>
+
+  <script type="module" src="async.js"></script>
+</body>
+</html>

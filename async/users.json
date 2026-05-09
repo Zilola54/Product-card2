@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name":"Nik", "surname":"Slivin", "email":"slivinnik@.com", "age": 26 },
+  { "id": 2, "name":"Terry", "surname":"Makush", "email":"makushte@.com", "age": 18 },
+  { "id": 3, "name":"Frank", "surname":"Vinches", "email":"vincherfr@.com", "age": 32 },
+  { "id": 4, "name":"Lin", "surname":"olsen", "email":"olsenlin@.com", "age": 28 },
+  { "id": 5, "name":"Kate", "surname":"serishki", "email":"serishkina@.com", "age": 22 }
+]
